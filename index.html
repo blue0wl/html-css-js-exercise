@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="'viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Portfolio</title>
+    <link href="style.css" rel="stylesheet"></link>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#portfolio"><strong>My Portfolio</strong></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#portfolio">List of Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Me</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+
+    </header>
+
+    <!--Project Section-->
+    
+    <section id="portfolio" class="project-container">
+        
+        <div class="title-block">
+            <h2 align=" center"><strong>List of Projects</strong></h2>
+        </div>
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col" onclick="colorChange('#6610f2')">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/coin_crisis.png" class="card-img-top" alt="game screen">
+                            <div class="card-body">
+                              <h5 class="card-title">Coin Crisis</h5>
+                              <p class="card-text"><i>An Indie game made as a requirement in my 2nd Year in college.</i></p>
+                              <button type="button" class="btn btn-primary" id="coin">See More</a>
+                            </div>
+                          </div>
+                        </div>
+    
+              
+                        <div class="col" onclick="colorChange('#280137')">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/lingua.png" class="card-img-top" alt="game screen">
+                            <div class="card-body">
+                              <h5 class="card-title">Lingua Disco</h5>
+                              <p class="card-text"><i>A language learning and translator application made as a requirement in HuCoint.</i></p>
+                              <a class="btn btn-primary" id="lingua">See More</a>
+                            </div>
+                          </div>
+
+                    </div>
+              
+                    <div class="col" onclick="colorChange('#000437')">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/byahero.png" class="card-img-top" alt="game screen">
+                            <div class="card-body">
+                              <h5 class="card-title">Byahero</h5>
+                              <p class="card-text"><i>A jeep routing application to alleviate traffic made as a requirement in Algocom.</i></p>
+                              <a  class="btn btn-primary" id="byahero">See More</a>
+                            </div>
+                          </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Modals-->
+    <div id="card1" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Coin Crisis</h5>
+            </div>
+            <div class="modal-body">
+              <p>Coin Crisis is an Indie game made by my group and the game basically centers around managing your finances wisely as a college student that lives alone. The end goal of the game is that your character must stay healthy and balance out the thirst, hunger, and mood meters while saving some money.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="close1">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+
+    <div id="card2" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Lingua Disco</h5>
+            </div>
+            <div class="modal-body">
+              <p>Lingua Disco is a mobile application that was developed in our HuCoint course. It is a language learning application with a built in translator as well. This application aims to develop users' linguistic knowledge that will equip them sufficient understanding in other languages to engage with other people even from other parts of the world.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="close2">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+    <div id="card3" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Byahero</h5>
+            </div>
+            <div class="modal-body">
+              <p>Byahero is an application buddy that will help it's user's needs like hailing a jeep in a recommended jeepney stop. It makes commuting systematic and in a way, much convenient because it also helps the jeepney drivers to navigate routes with less or no traffic.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="close3">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+    <!--Contact Section-->
+    <section id="contact" class="contact-container">
+        <div class="contact-title-block">
+            <h2 align="center"><strong>Like my Designs?</strong></h2>
+        </div>
+       
+    </section>
+
+
+  <footer id="footer" class="footer">
+    <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Send me a message here!</h3>
+                        <p>I appreciate your remarks</p>
+                        <form class="requires-validation" action="index.html" onsubmit="alert('Thank you for reaching out!')">
+
+                            <div class="col-md-12">
+                               <input class="form-control" type="text" name="name" placeholder="Full Name" required>
+                               <div class="invalid-feedback">Please type your name</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+                                 <div class="valid-feedback">Email field is valid!</div>
+                                 <div class="invalid-feedback">Email field cannot be blank!</div>
+                            </div>
+
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="message" placeholder="Type your message here" required>
+                                <div class="invalid-feedback">Please type a message</div>
+                             </div>
+                  
+
+                            <div class="form-button mt-3">
+                                <button id="submit" type="submit" class="btn btn-primary">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </footer>
+     <!--Javascript Bootstrap-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+     crossorigin="anonymous"></script>
+     <script src="script.js"></script>
+
+
+</body>
+
+</html>
